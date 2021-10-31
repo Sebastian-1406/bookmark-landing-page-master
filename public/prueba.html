@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+ 
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body class="font-Rubik">
+
+	<header class="py-5 px-5 md:px-10 md:py-10 lg:py-14 lg:px-28 overflow-hidden">
+		<nav class="flex items-center justify-between">
+			<img src="./images/logo-bookmark.svg" alt="bookmarks">
+			<img src="./images/icon-hamburger.svg" alt="icon-hamburger/svg" class="md:hidden">
+			<div class="hidden md:flex">
+				<ul class="flex items-center gap-7 text-sm md:uppercase ">
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="bg-yellow-600 text-white px-8 py-2 rounded md:shadow-md"><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="grid items-center md:grid-cols-2 md:my-20 ">
+
+			<div class="md:col-start-2 relative my-12 md:my-0">
+				<img src="./images/illustration-hero.svg" alt="illustration-hero" class="relative z-10 lg:-right-20">
+				<div class="bg-blue-600 absolute rounded-bl-full rounded-tl-full z-0 w-full h-4/5 left-14 -bottom-2 -right-5 md:-bottom-4 md:-right-10 md:left-28 lg:-right-0 lg:left-56"></div>
+			</div>
+
+			<div class="text-center md:text-left md:col-start-1 md:row-start-1">
+
+				<h1 class="text-gray-800 text-3xl font-semibold md:w-11/12 lg:text-4xl xl:text-5xl">A Simple Bookmark Manager</h1>
+				<p class="text-gray-400 text-sm my-6 md:w-11/12 md:text-base lg:text-lg xl:w-10/12">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+
+				<div class="flex justify-center gap-3 md:justify-start md:gap-5">
+					<button class="rounded py-3 px-4 bg-blue-600 text-white font-semibold text-sm md:px-4 md:text-base lg:text-lg lg:px-5">Get it on Chrome</button>
+					<button class="rounded py-3 px-4 shadow-lg text-gray-500 font-semibold text-sm md:px-4 md:text-base lg:text-lg lg:px-5">Get it on Firefox</button>
+				</div>
+			</div>
+
+
+		</div>
+
+	</header>
+
+  
+	<main>
+
+		<div class="py-5 px-5 md:px-10 md:py-10 lg:py-14 lg:px-28 xl:px-52">
+
+			<section class="">
+			
+				<div class="w-9/12 m-auto">
+          <div class="text-center w-3/5 mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-800">Features</h2>
+            <p class="text-base lg:text-lg my-6 text-gray-400">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</>
+          </div>
+          
+          <div id="contenedorFeatures" class="border-solid border-gray-300 border-b grid grid-cols-3 text-center mt-20,">
+          
+              <label for="simpleBookmarking" class="text-gray-500 cursor-pointer  px-7 border-solid  hover:border-red-700 border-b-4 transition-colors duration-300 pb-2 hover:text-gray-700 border-red-600 border-transparent">Simple Bookmarking</label>
+              <label for="speedySearching" class="text-gray-500 cursor-pointer  px-7 border-solid  hover:border-red-700 border-b-4 transition-colors duration-300 pb-2 hover:text-gray-700 border-transparent">Speedy Searching</label>
+              <label for="easySharing"  class="text-gray-500 cursor-pointer  px-7 border-solid  hover:border-red-700 border-b-4 transition-colors duration-300 pb-2 hover:text-gray-700 border-transparent">Easy Sharing</label>
+          
+          </div>
+        </div>
+
+        <div id="contendorTab" class="">
+
+          <input type="radio" name="option" id="simpleBookmarking">
+          <input type="radio" name="option" id="speedySearching">
+          <input type="radio" name="option" id="easySharing">
+
+
+          <div class="relative grid grid-cols-2 items-center gap-52">
+            <div>
+              <img src="./images/illustration-features-tab-1.svg" alt="" class="relative z-10">
+              <div class="bg-blue-600 absolute rounded-br-full rounded-tr-full z-0 w-6/12 h-4/5 -left-28 -bottom-8"></div>
+            </div>
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800">Bookmark in one click</h2>
+              <p class="text-base lg:text-lg my-6 text-gray-400">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.</p>
+                <button>More Info</button>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+        
+        <!-- <div class="flex justify-evenly border-solid border-gray-400 border-b ">
+          <label for="simpleBookmarking" class="border-solid hover:border-red-700 border-b-4 inline-block">Simple Bookmarking</label>
+          <label for="speedySearching">Speedy Searching</label>
+          <label for="easySharing">Easy Sharing</label>
+        </div> -->
+
+
+
+			</section>
+			
+		</div>
+	</main>
+  
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  Intelligent search
+
+  Our powerful search feature will help you find saved sites in no time at all. 
+  No need to trawl through all of your bookmarks.
+
+  More Info
+
+  Share your bookmarks
+
+  Easily share your bookmarks and collections with others. Create a shareable 
+  link that you can send at the click of a button.
+
+  More Info
+
+  Download the extension
+
+  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  got a favourite you’d like us to prioritize.
+
+  Add to Chrome
+  Minimum version 62
+  Add & Install Extension
+
+  Add to Firefox
+  Minimum version 55
+  Add & Install Extension
+
+  Add to Opera
+  Minimum version 46
+  Add & Install Extension
+
+  Frequently Asked Questions
+  
+  Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us.
+
+  <!-- Question 1 -->
+  What is Bookmark?
+
+  <!-- Answer 1 -->
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+
+  <!-- Question 2 -->
+  How can I request a new browser?
+
+  <!-- Answer 2 -->
+  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+  <!-- Question 3 -->
+  Is there a mobile app?
+
+  <!-- Answer 3 -->
+  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum.
+
+  <!-- Question 4 -->
+  What about other Chromium browsers?
+
+  <!-- Answer 4 -->
+  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit.
+
+  More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
