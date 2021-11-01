@@ -25,6 +25,29 @@ const contenedorTab = {
 
 }
 let radio = document.querySelectorAll("[type=radio]");
+let iconNav = document.getElementById("iconNav");
+let contendorEnlaces = document.getElementById("navEnlace");
+let body = document.querySelector("body");
+
+iconNav.addEventListener("click", () => {
+     let logo = document.getElementById("logo");
+     let logoNav = document.getElementById("navLogo");
+
+
+     logo.classList.toggle("hidden")
+     contendorEnlaces.classList.toggle("hidden")
+     body.classList.toggle("overflow-hidden")
+
+     if(logoNav.classList.contains('hidden')){
+          logoNav.classList.remove("hidden");
+          iconNav.src = "./images/icon-close.svg";
+     }else{
+          logoNav.classList.add("hidden")
+          iconNav.src = "./images/icon-hamburger.svg";
+     }
+
+})
+
 
 radio.forEach(input => {
      input.addEventListener("click", () => {

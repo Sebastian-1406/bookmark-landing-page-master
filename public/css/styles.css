@@ -46999,7 +46999,7 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
-
+  
   .group:hover .sm\:group-hover\:bg-transparent {
     background-color: transparent;
   }
