@@ -35,15 +35,18 @@ iconNav.addEventListener("click", () => {
 
 
      logo.classList.toggle("hidden")
-     contendorEnlaces.classList.toggle("hidden")
+     contendorEnlaces.classList.toggle("hidden");
+     
      body.classList.toggle("overflow-hidden")
 
      if(logoNav.classList.contains('hidden')){
           logoNav.classList.remove("hidden");
           iconNav.src = "./images/icon-close.svg";
+          contendorEnlaces.style.background = "#252b46e6";
      }else{
           logoNav.classList.add("hidden")
           iconNav.src = "./images/icon-hamburger.svg";
+          contendorEnlaces.style.background = "#fff";
      }
 
 })
