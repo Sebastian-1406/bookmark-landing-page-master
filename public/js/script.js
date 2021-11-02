@@ -108,11 +108,11 @@ const enviarFormulario = () => {
 
 contenedorTabs.addEventListener("click", (e) => {
      if(e.target.id == "tab1") {
-          completarInformacion("tab1")
+          completarInformacion("tab1");
      }else if(e.target.id == "tab2") {
-          completarInformacion("tab2")
+          completarInformacion("tab2");
      }else if(e.target.id == "tab3") {
-          completarInformacion("tab3")
+          completarInformacion("tab3");
      }
 
 })
@@ -121,7 +121,7 @@ const completarInformacion = (tab) => {
      let imagen = document.getElementById("tabImagen");
      let titulo = document.getElementById("tabSubtitulo");
      let parrafo = document.getElementById("tabParrafo");
-    
+
      if(tab == "tab1"){
           imagen.src = contenedorTab.tab1.img
           titulo.innerHTML = contenedorTab.tab1.subTitulo
